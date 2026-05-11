@@ -1,0 +1,75 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="RLS在线刚度估计算法流程图" id="rls-flowchart">
+    <mxGraphModel dx="1562" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+          <mxGeometry x="305" y="30" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="初始化：&lt;br&gt;K̂ᵢ(0) = K&lt;sub&gt;i,nom&lt;/sub&gt;，P&lt;sub&gt;i&lt;/sub&gt;(0) = 10⁴" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="110" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="采集当前数据：&lt;br&gt;τ&lt;sub&gt;m,i&lt;/sub&gt;(t)、θ̈&lt;sub&gt;i&lt;/sub&gt;(t)、φ&lt;sub&gt;i&lt;/sub&gt;(t)&lt;br&gt;计算观测值 y&lt;sub&gt;i&lt;/sub&gt;(t) = τ&lt;sub&gt;m,i&lt;/sub&gt;(t) − J&lt;sub&gt;i&lt;/sub&gt;θ̈&lt;sub&gt;i&lt;/sub&gt;(t)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="210" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="计算先验预测误差：&lt;br&gt;ε&lt;sub&gt;i&lt;/sub&gt;(t) = y&lt;sub&gt;i&lt;/sub&gt;(t) − φ&lt;sub&gt;i&lt;/sub&gt;(t)K̂&lt;sub&gt;i&lt;/sub&gt;(t−1)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="330" width="300" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="计算RLS增益：&lt;br&gt;K&lt;sub&gt;g,i&lt;/sub&gt;(t) = P&lt;sub&gt;i&lt;/sub&gt;(t−1)φ&lt;sub&gt;i&lt;/sub&gt;(t)[λ + P&lt;sub&gt;i&lt;/sub&gt;(t−1)φ&lt;sub&gt;i&lt;/sub&gt;²(t)]⁻¹" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="435" width="300" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="更新刚度估计：&lt;br&gt;K̂&lt;sub&gt;i&lt;/sub&gt;(t) = K̂&lt;sub&gt;i&lt;/sub&gt;(t−1) + K&lt;sub&gt;g,i&lt;/sub&gt;(t)ε&lt;sub&gt;i&lt;/sub&gt;(t)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="540" width="300" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="更新协方差：&lt;br&gt;P&lt;sub&gt;i&lt;/sub&gt;(t) = (1/λ)[1 − K&lt;sub&gt;g,i&lt;/sub&gt;(t)φ&lt;sub&gt;i&lt;/sub&gt;(t)]P&lt;sub&gt;i&lt;/sub&gt;(t−1)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="645" width="300" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="刚度值限幅：&lt;br&gt;K̂&lt;sub&gt;i&lt;/sub&gt;(t) ← max(K&lt;sub&gt;i,min&lt;/sub&gt;, min(K̂&lt;sub&gt;i&lt;/sub&gt;(t), K&lt;sub&gt;i,max&lt;/sub&gt;))" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="750" width="300" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="仿真是否&lt;br&gt;结束？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="860" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="输出刚度估计值&lt;br&gt;反馈至iLQR控制器" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1020" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="5" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="6" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="7" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="8" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="9" target="10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="是" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" source="10" target="11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="否" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="910" />
+              <mxPoint x="150" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
