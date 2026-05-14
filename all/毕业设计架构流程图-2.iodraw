@@ -150,7 +150,7 @@
         <mxCell id="zNphlAFkBCsDKytosBux-38" value="ROS2&amp;nbsp; DDS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="520.25" y="114.5" width="159.75" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FLzFhL6vdEatt5i_hDVb-1" value="&lt;font face=&quot;Times New Roman&quot;&gt;陀螺仪驱动&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;fontFamily=Comic Sans MS;fontSize=19;fontColor=#000000;align=center;" parent="1" vertex="1">
+        <mxCell id="FLzFhL6vdEatt5i_hDVb-1" value="&lt;font face=&quot;Times New Roman&quot;&gt;姿态传感器驱动&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;fontFamily=Comic Sans MS;fontSize=19;fontColor=#000000;align=center;" parent="1" vertex="1">
           <mxGeometry x="490" y="310" width="170" height="50" as="geometry" />
         </mxCell>
         <mxCell id="FLzFhL6vdEatt5i_hDVb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.005;entryY=0.886;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" parent="1" source="FLzFhL6vdEatt5i_hDVb-1" target="zNphlAFkBCsDKytosBux-29" edge="1">
