@@ -1,71 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2026-05-11T00:00:00.000Z" agent="opencode" version="24.0.0" type="device">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="iLQR算法流程图" id="ilqr-flowchart">
-    <mxGraphModel dx="1100" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="300" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="2" value="开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" vertex="1" parent="1">
-          <mxGeometry x="305" y="30" width="110" height="40" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="开始" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+          <mxGeometry x="305" y="30" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="初始化控制序列 u&lt;sub&gt;0:N-1&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="110" width="200" height="50" as="geometry"/>
+        <mxCell id="3" value="初始化控制序列 u&lt;sub&gt;0:N-1&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="110" width="200" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="前向仿真：利用系统动力学&lt;br&gt;计算状态轨迹 x&lt;sub&gt;0:N&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="210" width="240" height="50" as="geometry"/>
+        <mxCell id="4" value="前向仿真：利用系统动力学&lt;br&gt;计算状态轨迹 x&lt;sub&gt;0:N&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="210" width="240" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="线性化与二次近似：&lt;br&gt;有限差分法计算 A&lt;sub&gt;k&lt;/sub&gt;、B&lt;sub&gt;k&lt;/sub&gt;，&lt;br&gt;计算代价梯度 l&lt;sub&gt;x&lt;/sub&gt;、l&lt;sub&gt;u&lt;/sub&gt;、l&lt;sub&gt;xx&lt;/sub&gt;、l&lt;sub&gt;uu&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="310" width="280" height="70" as="geometry"/>
+        <mxCell id="5" value="线性化与二次近似：&lt;br&gt;有限差分法计算 A&lt;sub&gt;k&lt;/sub&gt;、B&lt;sub&gt;k&lt;/sub&gt;，&lt;br&gt;计算代价梯度 l&lt;sub&gt;x&lt;/sub&gt;、l&lt;sub&gt;u&lt;/sub&gt;、l&lt;sub&gt;xx&lt;/sub&gt;、l&lt;sub&gt;uu&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="310" width="280" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="6" value="反向递推：对 Q&lt;sub&gt;uu&lt;/sub&gt; 施加正则化，&lt;br&gt;计算控制增益 k&lt;sub&gt;k&lt;/sub&gt;、K&lt;sub&gt;k&lt;/sub&gt;，&lt;br&gt;更新值函数，对称化 V&lt;sub&gt;xx,k&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="430" width="280" height="70" as="geometry"/>
+        <mxCell id="6" value="反向递推：对 Q&lt;sub&gt;uu&lt;/sub&gt; 施加正则化，&lt;br&gt;计算控制增益 k&lt;sub&gt;k&lt;/sub&gt;、K&lt;sub&gt;k&lt;/sub&gt;，&lt;br&gt;更新值函数，对称化 V&lt;sub&gt;xx,k&lt;/sub&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="430" width="280" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="7" value="前向更新：依次尝试步长&lt;br&gt;α∈{1.0, 0.5, 0.25, 0.1, 0.05, 0.01}&lt;br&gt;生成新轨迹" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="550" width="280" height="60" as="geometry"/>
+        <mxCell id="7" value="前向更新：依次尝试步长&lt;br&gt;α∈{1.0, 0.5, 0.25, 0.1, 0.05, 0.01}&lt;br&gt;生成新轨迹" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="550" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8" value="代价是否&lt;br&gt;下降？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="660" width="160" height="100" as="geometry"/>
+        <mxCell id="8" value="代价是否&lt;br&gt;下降？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="660" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="9" value="线搜索失败&lt;br&gt;终止迭代" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="685" width="120" height="50" as="geometry"/>
+        <mxCell id="9" value="线搜索失败&lt;br&gt;终止迭代" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="685" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="10" value="收敛或达到&lt;br&gt;最大迭代次数？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="820" width="180" height="110" as="geometry"/>
+        <mxCell id="10" value="收敛或达到&lt;br&gt;最大迭代次数？" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="820" width="180" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="输出最优控制律" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" vertex="1" parent="1">
-          <mxGeometry x="305" y="990" width="110" height="40" as="geometry"/>
+        <mxCell id="11" value="输出最优控制律" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontSize=14;fontStyle=1;strokeWidth=1.5;" parent="1" vertex="1">
+          <mxGeometry x="305" y="990" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="e1" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="2" target="3" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e1" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="3" target="4" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e2" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="4" target="5" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e3" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="5" target="6" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e4" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="5" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="6" target="7" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e5" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="6" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" edge="1" source="7" target="8" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e6" style="endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1;" parent="1" source="7" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" value="是" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;" edge="1" source="8" target="10" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e7" value="是" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" source="8" target="10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" value="否" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="8" target="9" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e8" value="否" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="8" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" value="是" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;" edge="1" source="10" target="11" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="e9" value="是" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;" parent="1" source="10" target="11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" value="否" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="10" target="4" parent="1">
+        <mxCell id="e10" value="否" style="endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=12;strokeWidth=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="150" y="875"/>
-              <mxPoint x="150" y="235"/>
+              <mxPoint x="150" y="875" />
+              <mxPoint x="150" y="235" />
             </Array>
           </mxGeometry>
         </mxCell>
