@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AF4ZqDHzAlZceARt0DSD-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=90;" vertex="1" parent="1">
-          <mxGeometry x="300" y="300" width="60" height="80" as="geometry" />
+          <mxGeometry x="270" y="300" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="AF4ZqDHzAlZceARt0DSD-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -54,9 +54,6 @@
             <mxPoint x="430" y="350" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="AF4ZqDHzAlZceARt0DSD-12" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.arc;startAngle=0.3;endAngle=0.1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="280" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
