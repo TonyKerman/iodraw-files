@@ -119,7 +119,7 @@
             <mxPoint x="520" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AF4ZqDHzAlZceARt0DSD-28" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;rotation=-55;size=30;" vertex="1" parent="1">
+        <mxCell id="AF4ZqDHzAlZceARt0DSD-28" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;rotation=-55;size=10;" vertex="1" parent="1">
           <mxGeometry x="430" y="350" width="280" height="80" as="geometry" />
         </mxCell>
       </root>
